@@ -1,0 +1,116 @@
+html,
+body {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.grid p {
+  border: 2px solid white;
+  margin: 0;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition-duration: 0.2s;
+}
+.grid p:hover {
+  background-color: rgba(0, 0, 0, 0);
+  transition-duration: 0.2s;
+}
+.current-player {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 50px;
+  height: 55px;
+  width: 40px;
+  text-align: center;
+}
+
+.winner {
+  height: 75px;
+  margin: 0;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid p:hover {
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  display: inline;
+  color: #4843e4;
+  font-size: 20px;
+  background: white;
+  font-weight: bold;
+  border: 4px solid white;
+  margin-top: 20px;
+  transition-duration: 320ms;
+}
+
+button:hover {
+  border: 4px solid white;
+  color: white;
+  background: none;
+  transition-duration: 320ms;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+button:focus {
+  border: 4px solid white;
+}
+
+.notice {
+  position: absolute;
+  width: 304px;
+  height: 70px;
+  background-color: white;
+  top: 0px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  color: black;
+  font-size: 20px;
+  align-items: center;
+  pointer-events: none;
+  border-radius: 2px;
+  transition-duration: 1s;
+  transform: translateY(0px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.notice p {
+  margin: 0;
+}

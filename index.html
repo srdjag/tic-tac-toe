@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tic-tac-toe</title>
+  <meta name="description" content="Tic tac toe the game">
+  <meta name="Srdja Gunjic" content="SitePoint">
+  <link rel="shortcut icon" href="x.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css?v=1.0">
+  <link rel="stylesheet" href="custom-style.css?v=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+  
+    <section class="grid-wrapper noselect">
+
+        <p class="winner noselect"></p>
+        <div class="grid">
+
+            <p id="1" class="noselect"></p>
+            <p id="2" class="noselect"></p>
+            <p id="3" class="noselect"></p>
+            <p id="4" class="noselect"></p>
+            <p id="5" class="noselect"></p>
+            <p id="6" class="noselect"></p>
+            <p id="7" class="noselect"></p>
+            <p id="8" class="noselect"></p>
+            <p id="9" class="noselect"></p>
+
+        </div>
+        <div class="buttons noselect">
+        <button class="empty" onclick="empty()">Reset</button>
+        <p class="current-player noselect"></p>
+        <button class="switch" onclick="switchit()">Switch</button>
+        </div>
+
+    </section>  
+
+</body>
+</html>
